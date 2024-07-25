@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
   <div class="card">
     <div class="card-image">
       <figure class="image is-square">
+      <!-- <img [src]="imgUrl" alt="Placeholder image"/> -->
       <img [src]="imgUrl" alt="Placeholder image"/>
       </figure>
     </div>

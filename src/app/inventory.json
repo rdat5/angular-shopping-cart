@@ -1,0 +1,58 @@
+[
+    {
+      "id": 0,
+      "item_name": "Barrel Jellyfish",
+      "price": 4.99,
+      "description": "Large and have eight arms.",
+      "imgUrl": "images/barrel.jpg"
+    },
+    {
+      "id": 1,
+      "item_name": "Box Jellyfish",
+      "price": 59.99,
+      "description": "Potent venom.",
+      "imgUrl": "images/box.jpg"
+    },
+    {
+      "id": 2,
+      "item_name": "Lion's Mane",
+      "price": 99.99,
+      "description": "One of the largest jelly species in the world.",
+      "imgUrl": "images/lionsmane.jpg"
+    },
+    {
+      "id": 3,
+      "item_name": "Moon Jellyfish",
+      "price": 2.99,
+      "description": "Most common jellyfish in UK seas.",
+      "imgUrl": "images/moonjellyfish.jpg"
+    },
+    {
+      "id": 4,
+      "item_name": "Nomuras Jellyfish",
+      "price": 24.99,
+      "description": "Considered edible.",
+      "imgUrl": "images/nomuras.jpg"
+    },
+    {
+      "id": 5,
+      "item_name": "Pacific Sea Nettle",
+      "price": 14.99,
+      "description": "Distinctive golden bell.",
+      "imgUrl": "images/pacific_sea_nettle.jpg"
+    },
+    {
+      "id": 6,
+      "item_name": "Portugese Man o War",
+      "price": 59.99,
+      "description": "Actually a colony of organisms.",
+      "imgUrl": "images/portugese_manowar.jpg"
+    },
+    {
+      "id": 7,
+      "item_name": "Tiburonia Granrojo",
+      "price": 999.99,
+      "description": "Lives in deep-sea habitats.",
+      "imgUrl": "images/tiburonia_granrojo.jpg"
+    }
+  ]
