@@ -12,8 +12,10 @@ import { CartService } from './cart.service';
   providers: [CartService]
 })
 export class AppComponent {
-  cart_service : CartService
-  constructor() {
-    this.cart_service = inject(CartService)
+  constructor(private cart_service : CartService) {
+  }
+
+  get_cart_quantity() : number {
+    return this.cart_service.get_cart_quantity()
   }
 }
