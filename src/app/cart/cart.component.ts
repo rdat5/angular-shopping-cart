@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CartCardComponent } from '../cart-card/cart-card.component';
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [],
+  imports: [CartCardComponent],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
 })
