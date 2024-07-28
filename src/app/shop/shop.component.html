@@ -4,6 +4,7 @@
         <div class="grid is-column-gap-4 is-row-gap-4 is-col-min-10">
           @for (item of this.inventory; track item.id) {
             <app-card
+              [item_id]="item.id"
               [item_name]="item.item_name"
               [price]="item.price"
               [item_description]="item.description"
