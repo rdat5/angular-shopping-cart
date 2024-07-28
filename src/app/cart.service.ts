@@ -19,6 +19,6 @@ export class CartService {
   }
 
   get_cart_quantity() : number {
-    return this.cart_contents.length
+    return this.cart_contents.reduce((accum, item) => accum + item.quantity, 0)
   }
 }
