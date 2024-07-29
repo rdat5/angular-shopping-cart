@@ -1,8 +1,22 @@
 <section class="hero has-background-primary-light is-fullheight">
   <div class="hero-body">
-      <div class="container has-text-centered">
-        <app-cart-card></app-cart-card>
-        <app-cart-card></app-cart-card>
+      <div class="container">
+        <div class="fixed-grid has-1-cols">
+          <div class="grid">
+            <app-cart-card></app-cart-card>
+            <app-cart-card></app-cart-card>
+            <app-cart-card></app-cart-card>
+          </div>
+        </div>
+        <div class="level">
+          <div class="level-left"></div>
+          <div class="level-right">
+            <div class="container">
+              <p class="title is-5">Total: $0.00</p>
+              <button class="button is-success">Proceed to Checkout</button>
+            </div>
+          </div>
+        </div>
       </div>
   </div>
 </section>
