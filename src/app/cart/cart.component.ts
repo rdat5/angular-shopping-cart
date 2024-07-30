@@ -18,6 +18,10 @@ export class CartComponent {
     return this.cart_service.cart_contents
   }
 
+  get_cart_total() : number {
+    return this.cart_service.get_cart_total()
+  }
+
   get_cart_quantity() : number {
     return this.cart_service.get_cart_quantity()
   }
