@@ -15,14 +15,14 @@ export class CartComponent {
   }
   
   get_cart() : Array<CartItem> {
-    return this.cart_service.cart_contents
+    return this.cart_service.cart_contents;
   }
 
   get_cart_total() : number {
-    return this.cart_service.get_cart_total()
+    return this.cart_service.get_cart_total();
   }
 
   get_cart_quantity() : number {
-    return this.cart_service.get_cart_quantity()
+    return this.cart_service.get_cart_quantity();
   }
 }

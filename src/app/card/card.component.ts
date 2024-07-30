@@ -9,7 +9,6 @@ import { CartService } from '../cart.service';
   <div class="card">
     <div class="card-image">
       <figure class="image is-square">
-      <!-- <img [src]="imgUrl" alt="Placeholder image"/> -->
       <img [src]="imgUrl" alt="Placeholder image"/>
       </figure>
     </div>
@@ -30,15 +29,15 @@ import { CartService } from '../cart.service';
   `,
 })
 export class CardComponent {
-  @Input() item_id : number = 0
-  @Input() item_name : string = "Item Name"
-  @Input() price : number = 1.00
-  @Input() item_description : string = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-  @Input() imgUrl : string = "https://bulma.io/assets/images/placeholders/128x128.png"
+  @Input() item_id : number = 0;
+  @Input() item_name : string = "Item Name";
+  @Input() price : number = 1.00;
+  @Input() item_description : string = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
+  @Input() imgUrl : string = "https://bulma.io/assets/images/placeholders/128x128.png";
 
   constructor(private cart_service : CartService) {}
 
   add_to_cart() {
-    this.cart_service.add_to_cart(this.item_id)
+    this.cart_service.add_to_cart(this.item_id);
   }
 }

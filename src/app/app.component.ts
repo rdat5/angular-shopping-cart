@@ -10,17 +10,16 @@ import { CartItem } from './cart-item';
   imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
-  // providers: [CartService]
 })
 export class AppComponent {
   constructor(private cart_service : CartService) {
   }
 
   get_cart() : Array<CartItem>  {
-    return this.cart_service.get_cart_contents()
+    return this.cart_service.get_cart_contents();
   }
 
   get_cart_quantity() : number {
-    return this.cart_service.get_cart_quantity()
+    return this.cart_service.get_cart_quantity();
   }
 }
