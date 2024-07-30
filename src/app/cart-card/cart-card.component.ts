@@ -24,7 +24,7 @@ import readFile from "../inventory.json"
             </div>
             <div class="level-right">
               <div class="container">
-                  <p class="subtitle">\${{ this.get_item_price(cart_item_data.id) * cart_item_data.quantity}}</p>
+                  <p class="subtitle">\${{ (this.get_item_price(cart_item_data.id) * cart_item_data.quantity).toFixed(2) }}</p>
                   <button class="button is-danger">Remove From Cart</button>
                 </div>
             </div>
