@@ -6,7 +6,7 @@ import { CartItem } from './cart-item';
 })
 export class CartService {
   cart_contents : Array<CartItem> = [];
-  
+
   constructor() {}
 
   add_to_cart(id : number) {
@@ -16,6 +16,10 @@ export class CartService {
     else {
       this.cart_contents.push({id: id, quantity:1})
     }
+  }
+
+  get_cart_contents() : Array<CartItem> {
+    return this.cart_contents
   }
 
   get_cart_quantity() : number {

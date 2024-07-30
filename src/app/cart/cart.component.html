@@ -3,9 +3,9 @@
       <div class="container">
         <div class="fixed-grid has-1-cols">
           <div class="grid">
-            <app-cart-card></app-cart-card>
-            <app-cart-card></app-cart-card>
-            <app-cart-card></app-cart-card>
+            @for (item of this.get_cart(); track item.id) {
+              <app-cart-card [cart_item_data]="item"></app-cart-card>
+            }
           </div>
         </div>
         <div class="level">
