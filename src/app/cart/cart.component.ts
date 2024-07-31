@@ -26,4 +26,8 @@ export class CartComponent {
   get_cart_quantity() : number {
     return this.cart_service.get_cart_quantity();
   }
+
+  checkout() {
+    alert("Thanks for shopping!")
+  }
 }
