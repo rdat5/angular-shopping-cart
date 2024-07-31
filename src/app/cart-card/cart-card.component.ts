@@ -19,13 +19,27 @@ import readFile from "../inventory.json"
             <div class="level-left">
               <div class="container">
                 <p class="title">{{ this.get_item_name(cart_item_data.id) }}</p>
-                <p class="subtitle">Quantity: {{ cart_item_data.quantity }}</p>
+                <button class="button is-danger is-small">Remove From Cart</button>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="container ml-6">
+                <p class="subtitle is-6">Each</p>
+                <p class="title is-5">\${{ this.get_item_price(cart_item_data.id) }}</p>
+              </div>
+            </div>
+            <div class="level-right">
+              <div class="container is-text has-text-centered">
+                <p class="subtitle is-6">Quantity:</p>
+              <p class="title is-5">{{ cart_item_data.quantity }}
               </div>
             </div>
             <div class="level-right">
               <div class="container">
-                  <p class="subtitle">\${{ (this.get_item_price(cart_item_data.id) * cart_item_data.quantity).toFixed(2) }}</p>
-                  <button class="button is-danger">Remove From Cart</button>
+                  <div class="container">
+                    <p class="subtitle is-6">Subtotal: </p>
+                    <p class="title is-5">\${{ (this.get_item_price(cart_item_data.id) * cart_item_data.quantity).toFixed(2) }}</p>
+                  </div>
                 </div>
             </div>
           </div>
