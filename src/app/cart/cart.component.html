@@ -1,22 +1,31 @@
 <section class="hero has-background-primary-light is-fullheight">
   <div class="hero-body">
       <div class="container">
-        <div class="fixed-grid has-1-cols">
-          <div class="grid">
-            @for (item of this.get_cart(); track item.id) {
-              <app-cart-card [cart_item_data]="item"></app-cart-card>
-            }
+        @if (this.get_cart_quantity() < 1) {
+          <div class="container has-text-centered">
+            <p class="Title">Your cart is currently empty.</p>
+            <p class="subtitle">Add some items to get started!</p>
+            <a routerLink="/shop" class="button is-link has-text-white is-large">Shop Now!</a>
           </div>
-        </div>
-        <div class="level">
-          <div class="level-left"></div>
-          <div class="level-right">
-            <div class="container">
-              <p class="title is-5">Total: ${{ this.get_cart_total().toFixed(2) }}</p>
-              <button class="button is-success">Proceed to Checkout</button>
+        }
+        @else {
+          <div class="fixed-grid has-1-cols">
+            <div class="grid">
+              @for (item of this.get_cart(); track item.id) {
+                <app-cart-card [cart_item_data]="item"></app-cart-card>
+              }
             </div>
           </div>
-        </div>
+          <div class="level">
+            <div class="level-left"></div>
+            <div class="level-right">
+              <div class="container">
+                <p class="title is-5">Total: ${{ this.get_cart_total().toFixed(2) }}</p>
+                <button class="button is-success">Proceed to Checkout</button>
+              </div>
+            </div>
+          </div>
+        }
       </div>
   </div>
 </section>

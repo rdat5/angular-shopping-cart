@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CartCardComponent } from '../cart-card/cart-card.component';
 import { CartService } from '../cart.service';
 import { CartItem } from '../cart-item';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [CartCardComponent],
+  imports: [CartCardComponent, RouterLink],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css',
 })
