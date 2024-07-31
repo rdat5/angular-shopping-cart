@@ -19,6 +19,13 @@ export class CartService {
     }
   }
 
+  remove_from_cart(id : number) {
+    const index = this.cart_contents.findIndex((item) => item.id === id);
+    if (index !== -1) {
+      this.cart_contents.splice(index, 1)
+    }
+  }
+
   get_item_price(id : number) : number {
     const price = inventory.find((item) => item.id == id)?.price;
     return price ?? 0;

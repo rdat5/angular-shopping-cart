@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CartItem } from '../cart-item';
 import readFile from "../inventory.json"
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-cart-card',
@@ -19,7 +20,7 @@ import readFile from "../inventory.json"
             <div class="level-left">
               <div class="container">
                 <p class="title">{{ this.get_item_name(cart_item_data.id) }}</p>
-                <button class="button is-danger is-small">Remove From Cart</button>
+                <button class="button is-danger is-small" (click)="remove_item_from_cart()">Remove From Cart</button>
               </div>
             </div>
             <div class="level-right">
@@ -52,6 +53,12 @@ export class CartCardComponent {
   inventory = readFile
 
   @Input() cart_item_data! : CartItem
+
+  constructor(private cart_service : CartService) {}
+
+  remove_item_from_cart() {
+    this.cart_service.remove_from_cart(this.cart_item_data.id)
+  }
 
   get_item_image(id : number) {
     const image_url = this.inventory.find((item) => item.id == id)?.imgUrl
