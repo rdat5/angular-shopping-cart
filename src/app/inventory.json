@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "item_name": "Lion's Mane",
+      "item_name": "Lion's Mane Jellyfish",
       "price": 99.99,
       "description": "One of the largest jelly species in the world.",
       "imgUrl": "images/lionsmane.jpg"
@@ -43,7 +43,7 @@
     },
     {
       "id": 6,
-      "item_name": "Portugese Man o War",
+      "item_name": "Portugese Man o' War",
       "price": 59.99,
       "description": "Actually a colony of organisms.",
       "imgUrl": "images/portugese_manowar.jpg"
